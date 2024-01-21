@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>自动跳转页面</title>
+</head>
+<body>
+  <h1>欢迎！</h1>
+  
+  <script type="text/javascript">
+    // 计算跳转的百分比概率（这里设置为30%）
+    var jumpProbability = 0.3;
+
+    // 检查是否要进行跳转
+    if (Math.random() < jumpProbability) {
+      // 生成随机的时间参数（范围为1到5秒）
+      var randomTime = Math.floor(Math.random() * 5000) + 1000; // 时间单位为毫秒
+
+      // 在指定的随机时间后跳转到指定的网页
+      setTimeout(function() {
+        window.location.href = "https://data.wujiebantu.com/upload/574C951AF060630C76F9983452983A06/1705399826422/FmoMY2Aq04RCqdbogggOeIi65_rH.png";
+      }, randomTime);
+    }
+  </script>
+</body>
+</html>
